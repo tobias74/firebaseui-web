@@ -1,7 +1,7 @@
 {
-  "name": "firebaseui",
-  "version": "6.0.2",
-  "description": "Javascript library for customizable UI on top of Firebase SDK",
+  "name": "firebaseui-without-fonts-import",
+  "version": "6.0.2b",
+  "description": "Fork of firebaseui - Javascript library for customizable UI on top of Firebase SDK",
   "files": [
     "dist/firebaseui.js",
     "dist/firebaseui.css",
@@ -31,10 +31,7 @@
   "author": "Google",
   "repository": {
     "type": "git",
-    "url": "https://github.com/firebase/firebaseui-web.git"
-  },
-  "publishConfig": {
-    "registry": "https://wombat-dressing-room.appspot.com"
+    "url": "https://github.com/tobias74/firebaseui-web.git"
   },
   "license": "Apache-2.0",
   "devDependencies": {
