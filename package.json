@@ -1,7 +1,7 @@
 {
-  "name": "firebaseui",
-  "version": "6.1.0",
-  "description": "Javascript library for customizable UI on top of Firebase SDK",
+  "name": "tobias74-firebaseui-without-fonts-import",
+  "version": "6.1.0a",
+  "description": "Fork of firebaseui - Javascript library for customizable UI on top of Firebase SDK",
   "files": [
     "dist/firebaseui.js",
     "dist/firebaseui.css",
