@@ -1,7 +1,7 @@
 {
-  "name": "tobias74-firebaseui-without-fonts-import",
-  "version": "6.0.2c",
-  "description": "Fork of firebaseui - Javascript library for customizable UI on top of Firebase SDK",
+  "name": "firebaseui",
+  "version": "6.1.0",
+  "description": "Javascript library for customizable UI on top of Firebase SDK",
   "files": [
     "dist/firebaseui.js",
     "dist/firebaseui.css",
@@ -36,8 +36,8 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "closure-builder": "^2.3.7",
-    "firebase": "^9.13.0",
-    "firebase-tools": "^9.3.0",
+    "firebase": "^10.0.0",
+    "firebase-tools": "^12.4.4",
     "fs-extra": "^3.0.1",
     "google-closure-compiler": "^20190415.0.0",
     "google-closure-deps": "^20210406.0.0",
@@ -55,13 +55,13 @@
     "protractor": "^7.0.0",
     "sass": "^1.49.7",
     "streamqueue": "^1.1.1",
-    "webdriver-manager": "^12.1.8"
+    "chromedriver": "^119.0.1"
   },
   "dependencies": {
     "dialog-polyfill": "^0.4.7",
     "material-design-lite": "^1.2.0"
   },
   "peerDependencies": {
-    "firebase": "^9.1.3"
+    "firebase": "^9.1.3 || ^10.0.0"
   }
 }

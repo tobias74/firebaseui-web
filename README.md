@@ -66,12 +66,8 @@ You just need to include the following script and CSS file in the `<head>` tag
 of your page, below the initialization snippet from the Firebase Console:
 
 ```html
-<script src="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth.js"></script>
-<link
-  type="text/css"
-  rel="stylesheet"
-  href="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth.css"
-/>
+<script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
 ```
 
 #### Localized Widget
@@ -80,21 +76,17 @@ Localized versions of the widget are available through the CDN. To use a
 localized widget, load the localized JS library instead of the default library:
 
 ```html
-<script src="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth__{LANGUAGE_CODE}.js"></script>
-<link
-  type="text/css"
-  rel="stylesheet"
-  href="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth.css"
-/>
+<script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth__{LANGUAGE_CODE}.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
 ```
 
 where `{LANGUAGE_CODE}` is replaced by the code of the language you want. For example, the French
 version of the library is available at
-`https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth__fr.js`. The list of available
+`https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth__fr.js`. The list of available
 languages and their respective language codes can be found at [LANGUAGES.md](LANGUAGES.md).
 
 Right-to-left languages also require the right-to-left version of the stylesheet, available at
-`https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth-rtl.css`, instead of the default
+`https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth-rtl.css`, instead of the default
 stylesheet. The supported right-to-left languages are Arabic (ar), Farsi (fa), and Hebrew (iw).
 
 ### Option 2: npm Module
@@ -198,18 +190,14 @@ for a more in-depth example, showcasing a Single Page Application mode.
   <head>
     <meta charset="UTF-8" />
     <title>Sample FirebaseUI App</title>
-    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
     <!-- *******************************************************************************************
        * TODO(DEVELOPER): Paste the initialization snippet from this dialog box:
        * Firebase Console > Project Settings > Add App > Web.
        ***************************************************************************************** -->
-    <script src="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth.js"></script>
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth.css"
-    />
+    <script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
     <script type="text/javascript">
       // FirebaseUI config.
       var uiConfig = {
@@ -277,8 +265,8 @@ Here is how you would track the Auth state across all your pages:
   <head>
     <meta charset="UTF-8" />
     <title>Sample FirebaseUI App</title>
-    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
     <!-- *******************************************************************************************
        * TODO(DEVELOPER): Paste the initialization snippet from:
        * Firebase Console > Overview > Add Firebase to your web app. *
@@ -374,7 +362,7 @@ FirebaseUI supports the following configuration parameters.
 <td>callbacks</td>
 <td>No</td>
 <td>
-  An object of developers <a href="#available-callbacks">callbacks</a> after
+  An object of developers' <a href="#available-callbacks">callbacks</a> after
   specific events.
   <br/>
   <em>Default:</em> <code>{}</code>
@@ -951,7 +939,7 @@ enforce this policy via one of these 2 mechanisms:
 <td>No</td>
 <td>
   Defines whether to require the user to provide a display name during email
-  and password sign up.
+  and password sign up. Note: this has no effect when using the <code>firebase.auth.EmailAuthProvider.EMAIL_LINK_SIGN_IN_METHOD</code>.
   <br/>
   <em>Default:</em> <code>true</code>
 </td>
@@ -1353,18 +1341,14 @@ FirebaseUI is displayed.
   <head>
     <meta charset="UTF-8" />
     <title>Sample FirebaseUI App</title>
-    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
     <!-- *******************************************************************************************
        * TODO(DEVELOPER): Paste the initialization snippet from:
        * Firebase Console > Overview > Add Firebase to your web app. *
        ***************************************************************************************** -->
-    <script src="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth.js"></script>
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="https://www.gstatic.com/firebasejs/ui/6.0.2/firebase-ui-auth.css"
-    />
+    <script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
     <script type="text/javascript">
       // FirebaseUI config.
       var uiConfig = {
@@ -1919,7 +1903,7 @@ never get initialized and no UI will be displayed.
 warning)
 
 When re-rendering the FirebaseUI Auth widget (for instance after signing in a
-user, signing her out and trying to sign her in again), it will sometimes log a
+user, signing them out and trying to sign them in again), it will sometimes log a
 warning:
 
 > UI Widget is already rendered on the page and is pending some user
@@ -1967,13 +1951,13 @@ can verify in the [demo app](https://fir-ui-demo-84a6c.firebaseapp.com/)).
 
 ### 6.0.0
 
-FirebaseUI-web v6.0.0 is intended to be used alongside Firebase JS SDK v9 compat.
+FirebaseUI-web v6.0.0 is intended to be used alongside Firebase JS SDK v9 or v10 [compat](https://firebase.google.com/docs/web/modular-upgrade#about_the_namespaced_compat_libraries).
 
 If using the CDN, change your Firebase imports to:
 
 ```html
-<script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
 ```
 
 If NPM:
