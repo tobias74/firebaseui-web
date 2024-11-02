@@ -4,7 +4,16 @@
 
 This fork tries to remove the hard coded loading of https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap
 
+### Installation
+
+```bash
+npm install tobias74-firebaseui-without-fonts-import --save
+```
+
 #### Please note that all further information in the README refers to the original project, not this fork.
+
+---
+
 
 FirebaseUI is an open-source JavaScript library for Web that provides simple,
 customizable UI bindings on top of [Firebase](https://firebase.google.com) SDKs
